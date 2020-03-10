@@ -3,7 +3,7 @@
 
 .header {
   height: 450px;
-  background-color: $background-medium;
+  background-color: $white;
 
   @include respond-to("medium") {
     height: 575px;
@@ -63,7 +63,7 @@
   }
 }
 
-.upcomingMeetup {
+.upcomingEvent {
   color: $body-dark;
   @include medium-font;
 

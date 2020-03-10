@@ -166,8 +166,8 @@ collections:
                 ],
             }
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Upcoming Meetup Heading", name: "upcomingMeetupHeading", widget: "string" }
-          - { label: "No Upcoming Meetup Text", name: "noUpcomingMeetupText", hint: "This text will be displayed when there are no upcoming meetups", required: true, widget: "string" }
+          - { label: "Upcoming Meetup Heading", name: "upcomingEventHeading", widget: "string" }
+          - { label: "No Upcoming Meetup Text", name: "noUpcomingEventText", hint: "This text will be displayed when there are no upcoming meetups", required: true, widget: "string" }
           - { label: "Maps Note", name: "mapsNote", required: true, widget: "string" }
           - {
               label: "Call to Actions",
