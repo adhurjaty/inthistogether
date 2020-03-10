@@ -60,6 +60,7 @@ MeetupTemplate.propTypes = {
     title: PropTypes.string,
     name: PropTypes.string,
     presenters: PropTypes.array,
+    eventImg: PropTypes.string
   }),
 };
 

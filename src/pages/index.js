@@ -12,6 +12,7 @@ import "../styles/home.scss";
 
 export const HomePageTemplate = ({ home, upcomingEvent: upcomingEvent = null }) => {
   const presenters = upcomingEvent && upcomingEvent.presenters;
+  const eventImg = upcomingEvent && upcomingEvent.eventImg
   const latitude = upcomingEvent && parseFloat(upcomingEvent.location.mapsLatitude);
   const longitude = upcomingEvent && parseFloat(upcomingEvent.location.mapsLongitude);
   return (
@@ -37,7 +38,7 @@ export const HomePageTemplate = ({ home, upcomingEvent: upcomingEvent = null }) 
                 <span className="upcomingEvent-detailLabel">Location: </span>
                 {upcomingEvent.location.name}
               </p>
-              {presenters.length > 0 && (
+              {/* {presenters.length > 0 && (
                 <div className="upcomingEvent-presenters">
                   {presenters.map(presenter => (
                     <div className="upcomingEvent-presenter" key={presenter.text}>
@@ -54,7 +55,9 @@ export const HomePageTemplate = ({ home, upcomingEvent: upcomingEvent = null }) 
                     </div>
                   ))}
                 </div>
-              )}
+              )} */}
+              <img className="upcomingEvent-eventImg" 
+                   src={eventImg} />
               <p className="upcomingEvent-mapNote">{home.mapsNote}</p>
               <div className="upcomingEvent-mapWrapper">
                 <Map
@@ -111,11 +114,11 @@ class HomePage extends React.Component {
       seo: { title: seoTitle, description: seoDescription, browserTitle },
     } = home;
     let upcomingEvent = null;
-    // Find the next meetup that is closest to today
+    // Find the next event that is closest to today
     data.allMarkdownRemark.edges.every(item => {
-      const { frontmatter: meetup } = item.node;
-      if (isAfter(meetup.rawDate, new Date())) {
-        upcomingEvent = meetup;
+      const { frontmatter: djEvent } = item.node;
+      if (isAfter(djEvent.rawDate, new Date())) {
+        upcomingEvent = djEvent;
         return true;
       } else {
         return false;
@@ -156,6 +159,7 @@ export const pageQuery = graphql`
             title
             formattedDate: date(formatString: "MMMM Do YYYY @ h:mm A")
             rawDate: date
+            eventImg
             presenters {
               name
               image

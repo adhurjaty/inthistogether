@@ -130,6 +130,14 @@
     @include small-font;
   }
 
+  &-eventImg {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+
   &-mapWrapper {
     position: relative;
     height: 450px;

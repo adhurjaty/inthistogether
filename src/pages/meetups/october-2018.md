@@ -2,6 +2,7 @@
 templateKey: meetup
 title: October 2018
 date: 2018-10-09T23:00:00.000Z
+eventImg: /img/MWYATT.jpg
 presenters:
   - image: /img/michael-dam-258165-unsplash.jpg
     links:

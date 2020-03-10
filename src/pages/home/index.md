@@ -4,20 +4,20 @@ headerImage:
   image: /img/itt_logo.svg
   imageAlt: JavaScript Wakanda
 title: Meet other JavaScript Developers in Wakanda
-upcomingEventHeading: Upcoming Meetup
+upcomingEventHeading: Upcoming Event
 noUpcomingEventText: Details to be announced.
 mapsNote: Clicking the pin opens Google Maps in a new tab.
 callToActions:
   firstCTA:
-    heading: Past Meetups
+    heading: Past Events
     linkType: internal
     linkURL: /meetups
-    subHeading: Look at what topics were presented at past meetups.
+    subHeading: Check out details and pics from our past shows
   secondCTA:
-    heading: Volunteer to Present
+    heading: Contact
     linkType: external
-    linkURL: 'mailto:contact@js-wakanda.org'
-    subHeading: Want to present at an upcoming meetup? Contact us.
+    linkURL: 'mailto:contact@inthistogetherevents.com'
+    subHeading: Questions about time or venues? Contact us.
 seo:
   browserTitle: JS Wakanda
   description: >-

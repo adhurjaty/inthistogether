@@ -1,6 +1,7 @@
 ---
 title: November 2060
 date: 2060-11-09T23:00:00.000Z
+eventImg: /img/MWYATT.jpg
 presenters:
   - image: /img/jonas-kakaroto-577554-unsplash.jpg
     links:
@@ -23,9 +24,9 @@ presenters:
       Scott will take use through the Meteor JavaScript framework and how it’s
       awesome in every way.
 location:
-  mapsLatitude: 64.843779
+  mapsLatitude: 34.4129458
   mapsLink: 'https://goo.gl/maps/Rm6ihxVrZGK2'
-  mapsLongitude: -147.718189
-  name: Fairbanks Ice Museum
+  mapsLongitude: -119.6905133
+  name: Hotel Californian
 ---
 

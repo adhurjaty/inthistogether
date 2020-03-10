@@ -2,6 +2,7 @@
 templateKey: meetup
 title: September 2018
 date: 2018-09-11T22:00:00.000Z
+eventImg: /img/MWYATT.jpg
 presenters:
   - image: /img/edward-cisneros-415601-unsplash.jpg
     links:

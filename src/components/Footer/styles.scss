@@ -2,9 +2,9 @@
 @import "../../styles/mixins";
 
 .footer {
-  background-color: $background-dark;
+  background-color: $white;
   @include medium-font;
-  color: $body-light;
+  color: $body-dark;
   padding: 80px 20px;
 
   @include respond-to("small") {
@@ -44,7 +44,7 @@
   }
 
   &-aboutTitleImg {
-    max-height: 60px;
+    max-height: 150px;
     height: auto;
     margin-bottom: 10px;
   }
@@ -69,7 +69,7 @@
     @include medium-font;
     font-weight: 400;
     text-decoration: none;
-    color: $body-light;
+    color: $body-dark;
     display: flex;
     align-items: center;
   }
