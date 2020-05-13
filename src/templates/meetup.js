@@ -21,6 +21,9 @@ class MeetupTemplate extends Component {
           </p>
         </div>
         <div className="meetup-presenters">
+            <img src={this.props.meetup.eventImg} />
+        </div>
+        {/* <div className="meetup-presenters">
           {this.props.meetup.presenters.map(presenter => (
             <div className="meetup-presenter" key={presenter.name}>
               <div className="meetup-presenterImageContainer">
@@ -49,7 +52,7 @@ class MeetupTemplate extends Component {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </section>
     );
   }
@@ -59,6 +62,7 @@ MeetupTemplate.propTypes = {
   meetup: PropTypes.shape({
     title: PropTypes.string,
     name: PropTypes.string,
+    eventImg: PropTypes.string,
     presenters: PropTypes.array,
     eventImg: PropTypes.string
   }),

@@ -11,7 +11,7 @@ callToActions:
   firstCTA:
     heading: Past Events
     linkType: internal
-    linkURL: /meetups
+    linkURL: /events
     subHeading: Check out details and pics from our past shows
   secondCTA:
     heading: Contact

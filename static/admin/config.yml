@@ -8,10 +8,10 @@ public_folder: /img
 display_url: https://gatsby-netlify-cms-example.netlify.com/
 
 collections:
-  - name: "meetups"
-    label: "Meetups"
+  - name: "events"
+    label: "Events"
     description: "Meetup dates, location, and presenter information."
-    folder: "src/pages/meetups"
+    folder: "src/pages/events"
     create: true
     fields:
       - { label: "Template Key", name: "templateKey", widget: "hidden", default: "meetup" }

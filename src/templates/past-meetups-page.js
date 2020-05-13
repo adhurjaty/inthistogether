@@ -104,6 +104,7 @@ export const pastMeetupsPageQuery = graphql`
             title
             formattedDate: date(formatString: "MMMM Do YYYY @ h:mm A")
             rawDate: date
+            eventImg
             presenters {
               name
               image

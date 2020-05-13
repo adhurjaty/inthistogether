@@ -1,6 +1,6 @@
 ---
-title: November 2060
-date: 2060-11-09T23:00:00.000Z
+title: Marques Wyatt
+date: 2020-03-08T14:00:00.000Z
 eventImg: /img/MWYATT.jpg
 presenters:
   - image: /img/jonas-kakaroto-577554-unsplash.jpg
