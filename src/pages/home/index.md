@@ -16,7 +16,7 @@ callToActions:
   secondCTA:
     heading: Contact
     linkType: external
-    linkURL: 'mailto:contact@inthistogetherevents.com'
+    linkURL: 'mailto:bookings@inthistogetherevents.com'
     subHeading: Questions about time or venues? Contact us.
 seo:
   browserTitle: In This Together
