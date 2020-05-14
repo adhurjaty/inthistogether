@@ -15,8 +15,8 @@ The purpose of the repository is to provide an idea of how a Gatsby project is s
 ### Run the project
 
 ```
-$ git clone git@github.com:robertcoopercode/gatsby-netlify-cms.git
-$ cd gatsby-netlify-cms
+$ git clone https://github.com/adhurjaty/inthistogether.git
+$ cd inthistogether
 $ yarn
 $ yarn develop
 ```
