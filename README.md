@@ -15,7 +15,7 @@ The purpose of the repository is to provide an idea of how a Gatsby project is s
 ### Run the project
 
 ```
-$ git clone https://github.com/adhurjaty/inthistogether.git
+$ git clone https://github.com/inthistogetherevents/eventsPage
 $ cd inthistogether
 $ yarn
 $ yarn develop
