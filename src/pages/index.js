@@ -73,7 +73,10 @@ export const HomePageTemplate = ({ home, upcomingEvent: upcomingEvent = null }) 
               </div>
             </>
           ) : (
-            <a href={home.noUpcomingEventLink}>{home.noUpcomingEventText}</a>
+            <a className="normal-link" 
+                href={home.noUpcomingEventLink}>
+                {home.noUpcomingEventText}
+            </a>
           )}
         </div>
       </section>
