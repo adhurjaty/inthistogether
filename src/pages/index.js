@@ -73,7 +73,7 @@ export const HomePageTemplate = ({ home, upcomingEvent: upcomingEvent = null }) 
               </div>
             </>
           ) : (
-            <p className="upcomingEvent-detail">{home.noUpcomingEventText}</p>
+            <a href={home.noUpcomingEventLink}>{home.noUpcomingEventText}</a>
           )}
         </div>
       </section>
@@ -188,6 +188,7 @@ export const pageQuery = graphql`
             }
             upcomingEventHeading
             noUpcomingEventText
+            noUpcomingEventLink
             mapsNote
             callToActions {
               firstCTA {

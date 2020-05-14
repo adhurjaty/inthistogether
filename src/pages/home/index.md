@@ -5,7 +5,8 @@ headerImage:
   imageAlt: JavaScript Wakanda
 title: Meet other JavaScript Developers in Wakanda
 upcomingEventHeading: Upcoming Event
-noUpcomingEventText: Details to be announced.
+noUpcomingEventText: Check out our Facebook page for upcoming events.
+noUpcomingEventLink: https://www.facebook.com/inthistogetherevents/events/
 mapsNote: Clicking the pin opens Google Maps in a new tab.
 callToActions:
   firstCTA:
@@ -21,8 +22,7 @@ callToActions:
 seo:
   browserTitle: In This Together
   description: >-
-    JavaScript meetup group in Wakanda where JavaScript developers get together
-    for presentations and to meet others in the community.
+    In This Together Events homepage.
   title: In This Together Events
 ---
 
