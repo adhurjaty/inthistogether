@@ -67,15 +67,28 @@
   color: $body-dark;
   @include medium-font;
 
+  &-streamLink {
+    color: $highlight-secondary;
+  }
+  &-streamLink:hover {
+    color: $highlight-secondary;
+    text-decoration: underline;
+  }
+
   &-container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
+  &-heading {
+    @include xlarge-font;
+    margin-bottom: 30px;
+  }
+
   &-title {
     @include large-font;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   &-detail {

@@ -3,7 +3,7 @@ templateKey: footer
 logoImage:
   image: /img/itt_logo.svg
   imageAlt: In This Together
-  tagline: We out here
+  tagline: © In This Together, 2020
 socialLinks:
   - image: /img/Instagram.svg
     imageAlt: Follow us on Instagram

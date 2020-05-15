@@ -1,7 +1,7 @@
 ---
-title: Gratitunes with Marques Wyatt
-date: 2020-03-08T14:00:00.000Z
-eventImg: /img/MWYATT.jpg
+title: Gratitunes with Marsh
+date: 2019-11-17T14:30:00.000Z
+eventImg: /img/GRATITUNE_01.jpg
 virtual: false
 showPresenters: false
 presenters:

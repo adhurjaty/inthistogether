@@ -51,6 +51,7 @@
 
   &-aboutDescription {
     @include medium-font();
+    text-align: center;
   }
 
   &-socialMenu {
