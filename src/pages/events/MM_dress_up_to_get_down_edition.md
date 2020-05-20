@@ -1,7 +1,7 @@
 ---
-title: Mindful Melodies with Dubinksy
-date: 2020-05-13T18:00:00.000-07:00
-eventImg: /img/mindful_melodies.jpg
+title: Mindful Melodies Dress Up, Get Down Edition with Dubinsky
+date: 2020-05-20T18:00:00.000-07:00
+eventImg: /img/rainbow_dubs.jpg
 virtual: true
 showPresenters: false
 presenters:
