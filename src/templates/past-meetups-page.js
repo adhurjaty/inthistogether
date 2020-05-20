@@ -104,6 +104,7 @@ export const pastMeetupsPageQuery = graphql`
             title
             formattedDate: date(formatString: "MMMM Do YYYY @ h:mm A")
             rawDate: date
+            virtual
             eventImg
             presenters {
               name
@@ -116,7 +117,15 @@ export const pastMeetupsPageQuery = graphql`
               }
             }
             location {
+              mapsLatitude
+              mapsLongitude
+              mapsLink
               name
+            }
+            stream {
+              streamProvider
+              streamChannel
+              streamLink
             }
           }
         }

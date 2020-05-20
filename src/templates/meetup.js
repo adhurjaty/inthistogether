@@ -16,10 +16,14 @@ class MeetupTemplate extends Component {
         <h2 className="meetup-title">{this.props.meetup.title}</h2>
         <div className="meetup-meta">
           <p className="meetup-metaField  meetup-metaField--date">
-            <span className="meetup-label">Date:</span> {format(parse(this.props.meetup.rawDate), "MMMM Do YYYY @ h:mm A").concat(" (local time))")}
+            <span className="meetup-label">Date:</span> {format(parse(this.props.meetup.rawDate), "MMMM Do YYYY @ h:mm A").concat(" PST")}
           </p>
           <p className="meetup-metaField  meetup-metaField--location">
-            <span className="meetup-label">Location:</span> {this.props.meetup.location.name}
+            <span className="meetup-label">Location: </span>
+            { this.props.meetup.virtual ? (
+                <span className="meetup-streamLink">{(this.props.meetup.virtual ? ("Virtual Event (".concat(this.props.meetup.stream.streamProvider, ")")) : (this.props.meetup.location.name))}
+                </span> ) : (this.props.meetup.location.name)
+            }
           </p>
         </div>
         <div className="meetup-presenters">
@@ -63,6 +67,7 @@ class MeetupTemplate extends Component {
 MeetupTemplate.propTypes = {
   meetup: PropTypes.shape({
     title: PropTypes.string,
+    virtual: PropTypes.bool,
     name: PropTypes.string,
     eventImg: PropTypes.string,
     presenters: PropTypes.array,
