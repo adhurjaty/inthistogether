@@ -1,6 +1,6 @@
 ---
 title: Gratitunes with Marsh
-date: 2019-11-17T14:30:00.000Z
+date: 2019-11-17T14:30:00.000-07:00
 eventImg: /img/GRATITUNE_01.jpg
 virtual: false
 showPresenters: false

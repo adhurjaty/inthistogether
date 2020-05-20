@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Helmet from "react-helmet";
 import isAfter from "date-fns/is_after";
+import parse from "date-fns/parse"
+import format from "date-fns/format"
 
 import Layout from "../components/Layout";
 import Map from "../components/Map";
@@ -109,6 +111,7 @@ class HomePage extends React.Component {
     data.allMarkdownRemark.edges.every(item => {
       const { frontmatter: djEvent } = item.node;
       if (isAfter(djEvent.rawDate, new Date())) {
+        djEvent.formattedDate = format(parse(djEvent.rawDate), "MMMM Do YYYY @ h:mm A").concat(" (local time)");
         upcomingEvent = djEvent;
         return true;
       } else {
@@ -148,7 +151,7 @@ export const pageQuery = graphql`
         node {
           frontmatter {
             title
-            formattedDate: date(formatString: "MMMM Do YYYY @ h:mm A")
+            formattedDate: date(formatString: "MMMM Do YYYY @ h:mm A z")
             rawDate: date
             eventImg
             virtual

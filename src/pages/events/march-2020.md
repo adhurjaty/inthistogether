@@ -1,6 +1,6 @@
 ---
 title: Gratitunes with Marques Wyatt
-date: 2020-03-08T14:00:00.000Z
+date: 2020-03-08T14:00:00.000-07:00
 eventImg: /img/MWYATT.jpg
 virtual: false
 showPresenters: false

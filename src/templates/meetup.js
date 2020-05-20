@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import "../styles/meetup.scss";
+import parse from "date-fns/parse"
+import format from "date-fns/format"
 
 import HeadshotPlaceholder from "../img/headshot-placeholder.svg";
 
@@ -14,7 +16,7 @@ class MeetupTemplate extends Component {
         <h2 className="meetup-title">{this.props.meetup.title}</h2>
         <div className="meetup-meta">
           <p className="meetup-metaField  meetup-metaField--date">
-            <span className="meetup-label">Date:</span> {this.props.meetup.formattedDate}
+            <span className="meetup-label">Date:</span> {format(parse(this.props.meetup.rawDate), "MMMM Do YYYY @ h:mm A").concat(" (local time))")}
           </p>
           <p className="meetup-metaField  meetup-metaField--location">
             <span className="meetup-label">Location:</span> {this.props.meetup.location.name}
