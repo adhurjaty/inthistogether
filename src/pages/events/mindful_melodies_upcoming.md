@@ -1,6 +1,6 @@
 ---
 title: Mindful Melodies with Dubinksy
-date: 2020-05-13T18:00:00.000-07:00
+date: 2020-06-03T18:00:00.000-07:00
 eventImg: /img/mindful_melodies.jpg
 virtual: true
 showPresenters: false
