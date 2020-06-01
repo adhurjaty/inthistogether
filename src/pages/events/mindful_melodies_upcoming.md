@@ -1,5 +1,5 @@
 ---
-title: Mindful Melodies with Dubinksy
+title: Mindful Melodies with Dubinsky
 date: 2020-05-27T18:00:00.000-07:00
 eventImg: /img/mindful_melodies.jpg
 virtual: true
