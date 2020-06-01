@@ -1,7 +1,7 @@
 ---
-title: Mindful Melodies with Dubinksy
-date: 2020-05-27T18:00:00.000-07:00
-eventImg: /img/mindful_melodies.jpg
+title: Mindful Melodies, A Tribute to George Floyd with Dubinksy
+date: 2020-06-03T18:00:00.000-07:00
+eventImg: /img/floyd_mural_1.jpg
 virtual: true
 showPresenters: false
 presenters:
