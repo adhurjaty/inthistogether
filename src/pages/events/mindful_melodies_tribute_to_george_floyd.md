@@ -1,7 +1,7 @@
 ---
 title: "ITT Presents: Mindful Melodies, A Tribute to George Floyd"
 date: 2020-06-03T18:00:00.000-07:00
-eventImg: /img/mindful-melodies-june-3-WEBSITE.jpg
+eventImg: /img/june-6-mindful-melodies-website-2.jpg
 virtual: true
 showPresenters: false
 presenters:
