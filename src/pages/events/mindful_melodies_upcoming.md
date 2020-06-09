@@ -1,6 +1,6 @@
 ---
-title: Mindful Melodies with Dubinsky
-date: 2020-05-27T18:00:00.000-07:00
+title: "ITTE Presents: Mindful Melodies with Dubinsky"
+date: 2020-06-10T18:00:00.000-07:00
 eventImg: /img/mindful_melodies.jpg
 virtual: true
 showPresenters: false
