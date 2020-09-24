@@ -1,7 +1,7 @@
 ---
-title: "ITTE Presents: Mindful Melodies, Western Wildfire Relief Fundraiser w/Special Guest Stevage"
-date: 2020-09-23T18:00:00.000-07:00
-eventImg: /img/MM_wildfire_fundraiser.jpg
+title: "ITTE Presents: Mindful Melodies, Beirut Relief Fundraiser"
+date: 2020-08-12T18:00:00.000-07:00
+eventImg: /img/MM_beirut_fundraiser.jpg
 
 virtual: true
 showPresenters: false
