@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Helmet from "react-helmet";
 import isBefore from "date-fns/is_before";
+import endOfDay from "date-fns/end_of_day"
 import ReactMarkdown from "react-markdown";
 
 import MeetupTemplate from "./meetup";
@@ -55,7 +56,7 @@ const PastMeetupsPage = ({ data }) => {
 
   // Find all the meetups that occured in the past
   meetups = meetups.filter(meetup => {
-    return isBefore(meetup.node.frontmatter.rawDate, new Date()) && meetup;
+    return isBefore(endOfDay(meetup.node.frontmatter.rawDate), new Date()) && meetup;
   });
 
   return (
