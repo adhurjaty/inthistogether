@@ -111,7 +111,7 @@ class HomePage extends React.Component {
     // Find the next event that is closest to today
     data.allMarkdownRemark.edges.every(item => {
       const { frontmatter: djEvent } = item.node;
-      if (isAfter(endOfDay(djEvent.rawDate), new Date()) {
+      if (isAfter(endOfDay(djEvent.rawDate), new Date())) {
         djEvent.formattedDate = format(parse(djEvent.rawDate), "MMMM Do YYYY @ h:mm A").concat(" (local time)");
         upcomingEvent = djEvent;
         return true;
