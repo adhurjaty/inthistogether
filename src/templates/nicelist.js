@@ -50,8 +50,8 @@ const NiceList = ({ data }) => {
         <meta name="title" content={seoTitle} />
         <meta name="description" content={seoDescription} />
         <title>{browserTitle}</title>
+        <script type="text/javascript" src="https://form.jotform.com/jsform/203287743361053"></script>
       </Helmet>
-      <script type="text/javascript" src="https://form.jotform.com/jsform/203287743361053"></script>
     </Layout>
   );
 };
