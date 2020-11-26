@@ -6,7 +6,7 @@ headerImage:
 title: In This Together
 upcomingEventHeading: Upcoming Events
 noUpcomingEventText: No upcoming events - keep in touch on our Facebook page!
-noUpcomingEventLink: https://www.facebook.com/events/519930078894764/
+noUpcomingEventLink: https://www.facebook.com/groups/ITTCommunity/
 mapsNote: Clicking the pin opens Google Maps in a new tab.
 callToActions:
   firstCTA:
