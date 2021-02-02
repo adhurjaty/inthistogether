@@ -1,6 +1,6 @@
 ---
 title: "ITTE Presents: Better Together Festival"
-date: 2021-02-13T01:30:00.000-07:00
+date: 2021-02-13T13:30:00.000-07:00
 eventImg: /img/better_together_flyer.jpg
 virtual: true
 showPresenters: false
