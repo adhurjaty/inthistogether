@@ -50,7 +50,7 @@ const BTTwitchCommands = ({ data }) => {
         <meta name="title" content={seoTitle} />
         <meta name="description" content={seoDescription} />
         <title>{browserTitle}</title>
-        <script type="text/javascript" src="https://form.jotform.com/210320791799057"></script>
+        <script type="text/javascript" src="https://form.jotform.com/jsform/210320791799057"></script>
       </Helmet>
     </Layout>
   );
