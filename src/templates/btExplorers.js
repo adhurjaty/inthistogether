@@ -29,7 +29,7 @@ export const BTExplorersTemplate = ({
         <a data-pin-do="embedBoard" data-pin-board-width="800" data-pin-scale-height="800" data-pin-scale-width="80" href="https://www.pinterest.com/inthistogetherevents/explorers/"></a>
       </div>
     </article>
-    <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+    <script async defer src="//assets.pinterest.com/js/pinit.js" />
   );
 };
 
