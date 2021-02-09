@@ -20,15 +20,12 @@ export const BTExplorersTemplate = ({
     <article className="btExplorers">
       <div className="container  btExplorers-container">
         <h1 className="btExplorers-title">{title}</h1>
-        {/* {bodyIsMarkdown ? (
+        {bodyIsMarkdown ? (
           <ReactMarkdown className="btExplorers-description" source={content} />
         ) : (
           <HTMLContent className="btExplorers-description" content={content} />
-        )} */}
-        <h1>Testing</h1>
-        <a data-pin-do="embedBoard" data-pin-board-width="800" data-pin-scale-height="800" data-pin-scale-width="80" href="https://www.pinterest.com/inthistogetherevents/explorers/"></a>
+        )}
       </div>
-      <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
     </article>
   );
 };
@@ -53,6 +50,10 @@ const BTExplorers = ({ data }) => {
         <meta name="title" content={seoTitle} />
         <meta name="description" content={seoDescription} />
         <title>{browserTitle}</title>
+        <meta
+            http-equiv="refresh"
+            content="0;url=https://www.pinterest.com/inthistogetherevents/explorers/"
+        />
       </Helmet>
     </Layout>
   );
