@@ -13,21 +13,12 @@ export const PdfPageTemplate = props => {
 
   return (
     <article className="about">
-      <div className="about-container  container">
-        <section className="about-header">
-          <div className="about-titleWrapper">
-            <h1 className="about-title">{page.frontmatter.title}</h1>
-          </div>
-          <div className="about-imageWrapper">
-            <img src={page.frontmatter.pdfImg} />
-          </div>
-        </section>
-        <section className="section">
-          <HTMLContent className="about-description">
-              <a href={page.frontmatter.pdfImg}>{page.frontmatter.pdfLinkText}</a>
-          </HTMLContent>
-        </section>
-      </div>
+        <div>
+            <h1><a href={page.frontmatter.pdf}>{page.frontmatter.pdfLinkText}</a></h1>
+        </div>
+        <div>
+          <img src={page.frontmatter.pdfImg} />
+        </div>
     </article>
   );
 };
