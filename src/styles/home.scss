@@ -6,7 +6,7 @@
   background-color: $white;
 
   @include respond-to("medium") {
-    height: 575px;
+    height: 200px;
   }
 
   &-container {
@@ -25,16 +25,16 @@
   }
 
   &-image {
-    height: 150px;
+    height: 200px;
     margin-bottom: 30px;
 
     @include respond-to("small") {
-      height: 200px;
+      height: 100px;
       margin-bottom: 0;
     }
 
     @include respond-to("medium") {
-      height: 300px;
+      height: 150px;
     }
   }
 
