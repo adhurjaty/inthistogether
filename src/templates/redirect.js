@@ -41,6 +41,7 @@ const Redirect = ({ data }) => {
     frontmatter: {
       seo: { title: seoTitle, description: seoDescription, browserTitle },
     },
+    redirect_url
   } = page;
 
   return (
