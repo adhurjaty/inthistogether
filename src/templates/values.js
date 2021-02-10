@@ -95,7 +95,7 @@ export const valuesQuery = graphql`
     }
     ...LayoutFragment
     allMarkdownRemark(
-      filter: { frontmatter: { value_name: { elemMatch: { text: { ne: null } } } } }
+      filter: { frontmatter: { value_name: { text: { ne: null } } } }
       sort: { order: DESC, fields: frontmatter___date }
     ) {
       edges {
