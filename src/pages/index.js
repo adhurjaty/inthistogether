@@ -122,6 +122,13 @@ class HomePage extends React.Component {
     return (
       <Layout footerData={footerData} navbarData={navbarData}>
         <Helmet>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-SR60NQ9CMJ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-SR60NQ9CMJ');
+        </script>
           <meta name="title" content={seoTitle} />
           <meta name="description" content={seoDescription} />
           <title>{browserTitle}</title>

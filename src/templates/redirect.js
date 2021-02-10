@@ -48,6 +48,13 @@ const Redirect = ({ data }) => {
   return (
     <Layout footerData={data.footerData} navbarData={data.navbarData}>
       <Helmet>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-SR60NQ9CMJ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-SR60NQ9CMJ');
+        </script>
         <meta name="title" content={seoTitle} />
         <meta name="og:title" content={seoTitle} />
         <meta name="description" content={seoDescription} />
