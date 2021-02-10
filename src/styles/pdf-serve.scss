@@ -30,7 +30,8 @@
 
   &-imageWrapper {
     width: 800px;
-    max-width: 100%;
+    max-width: 65%;
+    margin: auto;
 
     @include respond-to("medium") {
       width: 500px;
