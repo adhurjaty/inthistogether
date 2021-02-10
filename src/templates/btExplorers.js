@@ -53,7 +53,7 @@ const BTExplorers = ({ data }) => {
         <title>{browserTitle}</title>
         <meta
             http-equiv="refresh"
-            content="0;url=https://www.pinterest.com/inthistogetherevents/explorers/"
+            content={`0;url=${redirect_url}`}
         />
       </Helmet>
     </Layout>
