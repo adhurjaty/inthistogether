@@ -6,7 +6,7 @@ import format from "date-fns/format"
 
 import HeadshotPlaceholder from "../img/headshot-placeholder.svg";
 
-class Value extends Component {
+class ValueTemplate extends Component {
   render() {
     return (
       <section
