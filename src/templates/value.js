@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import "../styles/meetup.scss";
+import "../styles/value.scss";
 import parse from "date-fns/parse"
 import format from "date-fns/format"
 
@@ -10,9 +10,9 @@ class ValueTemplate extends Component {
   render() {
     return (
       <section
-        className={`meetup  ${this.props.className && this.props.className}`}>
-        <h2 className="meetup-title">{this.props.value.value_name}</h2>
-        <div className="meetup-meta">
+        className={`value  ${this.props.className && this.props.className}`}>
+        <h2 className="value-title">{this.props.value.value_name}</h2>
+        <div className="value-meta">
             <p>{this.props.value.value_desc}</p>
         </div>
         {/* <div className="meetup-presenters">

@@ -9,7 +9,7 @@ import ReactMarkdown from "react-markdown";
 import ValueTemplate from "./value";
 import Layout from "../components/Layout";
 import HTMLContent from "../components/Content";
-import "../styles/past-meetups-page.scss";
+import "../styles/values.scss";
 
 export const ValuesTemplate = ({
   title,
@@ -18,19 +18,19 @@ export const ValuesTemplate = ({
   bodyIsMarkdown = false,
 }) => {
   return (
-    <article className="pastMeetups">
-      <div className="container  pastMeetups-container">
-        <h1 className="pastMeetups-title">{title}</h1>
+    <article className="values">
+      <div className="container  values-container">
+        <h1 className="values-title">{title}</h1>
         {bodyIsMarkdown ? (
-          <ReactMarkdown className="pastMeetups-description" source={content} />
+          <ReactMarkdown className="values-description" source={content} />
         ) : (
-          <HTMLContent className="pastMeetups-description" content={content} />
+          <HTMLContent className="values-description" content={content} />
         )}
         {values &&
           values.map((value, index) => (
             <ValueTemplate
               key={index}
-              className="pastMeetups-meetup"
+              className="values-value"
               value={value.node.frontmatter}
             />
           ))}
@@ -56,11 +56,13 @@ const Values = ({ data }) => {
 
   return (
     <Layout footerData={data.footerData} navbarData={data.navbarData}>
-        <Helmet script={[{ 
-            type: 'text/javascript', 
-            innerHTML: 'window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag(\'js\', new Date()); gtag(\'config\', \'G-SR60NQ9CMJ\');' 
-        }]}>
+        <Helmet>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-SR60NQ9CMJ"></script>
+        <script dangerouslySetInnerHTML= {{ __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-SR60NQ9CMJ');`}} />  
         <meta name="title" content={seoTitle} />
         <meta name="description" content={seoDescription} />
         <title>{browserTitle}</title>
