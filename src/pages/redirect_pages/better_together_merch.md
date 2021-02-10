@@ -1,11 +1,11 @@
 ---
 templateKey: redirect
-title: Better Together Festival — Merch Store
-path: /BTMerch
+title: Merch Store | In This Together Events
+path: /merch
 redirect_url: https://teespring.com/stores/inthistogetherevents
 seo:
-  browserTitle: Better Together Festival — Merch Store | In This Together Events
-  description: Better Together Festival — Merch Store
-  title: Better Together Festival — Merch Store | In This Together Events
+  browserTitle: Merch Store | In This Together Events
+  description: In This Together Events Merch Store
+  title: Merch Store | In This Together Events
 ---
 ## Redirecting...
