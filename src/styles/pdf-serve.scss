@@ -29,11 +29,8 @@
   }
 
   &-imageWrapper {
-    width: 65%;
+    width: 1200px;
+    max-width: 65%;
     margin: auto;
-
-    @include respond-to("medium") {
-      width: 500px;
-    }
   }
 }
