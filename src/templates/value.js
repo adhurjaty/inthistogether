@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import "../styles/value.scss";
+import "../styles/meetup.scss";
 import parse from "date-fns/parse"
 import format from "date-fns/format"
 

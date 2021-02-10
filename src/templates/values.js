@@ -9,7 +9,7 @@ import ReactMarkdown from "react-markdown";
 import ValueTemplate from "./value";
 import Layout from "../components/Layout";
 import HTMLContent from "../components/Content";
-import "../styles/values.scss";
+import "../styles/past-meetups-page.scss";
 
 export const ValuesTemplate = ({
   title,
