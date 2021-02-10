@@ -1,5 +1,5 @@
 ---
-templateKey: redirect
+templateKey: btExplorers
 title: Better Together Festival — Explorers Inspiration
 path: /BTExplorers
 redirect_url: https://www.pinterest.com/inthistogetherevents/explorers/

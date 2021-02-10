@@ -41,6 +41,7 @@ const BTExplorers = ({ data }) => {
   const {
     frontmatter: {
       seo: { title: seoTitle, description: seoDescription, browserTitle },
+      redirect_url
     },
   } = page;
 
@@ -61,6 +62,7 @@ const BTExplorers = ({ data }) => {
 
 BTExplorers.propTypes = {
   data: PropTypes.object.isRequired,
+  redirect_url: PropTypes.object.isRequired,
 };
 
 export default BTExplorers;
@@ -71,6 +73,7 @@ export const BTExplorersQuery = graphql`
       html
       frontmatter {
         title
+        redirect_url
         seo {
           browserTitle
           title
