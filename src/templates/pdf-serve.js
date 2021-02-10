@@ -13,11 +13,13 @@ export const PdfPageTemplate = props => {
 
   return (
     <article className="about">
-        <div>
-            <h1><a href={page.frontmatter.pdf}>{page.frontmatter.pdfLinkText}</a></h1>
-        </div>
-        <div>
-          <img src={page.frontmatter.pdfImg} />
+        <div id="container">
+            <div>
+                <h1><a href={page.frontmatter.pdf}>{page.frontmatter.pdfLinkText}</a></h1>
+            </div>
+            <div>
+                <img src={page.frontmatter.pdfImg} />
+            </div>
         </div>
     </article>
   );
@@ -59,6 +61,7 @@ export const pdfPageQuery = graphql`
         title
         pdf
         pdfImg
+        pdfLinkText
         seo {
           browserTitle
           title
