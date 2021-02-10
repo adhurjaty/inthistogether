@@ -18,7 +18,7 @@ export const PdfPageTemplate = props => {
             <h1 className="pdf-serve-title"><a href={page.frontmatter.pdf} download>{page.frontmatter.pdfLinkText}</a></h1>
           </div>
         </section>
-        <div id="pdf-serve-imageWrapper">
+        <div className="pdf-serve-imageWrapper">
           <img src={page.frontmatter.pdfImg} />
         </div>  
     </article>
