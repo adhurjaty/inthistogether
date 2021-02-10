@@ -49,7 +49,9 @@ const Redirect = ({ data }) => {
     <Layout footerData={data.footerData} navbarData={data.navbarData}>
       <Helmet>
         <meta name="title" content={seoTitle} />
+        <meta name="og:title" content={seoTitle} />
         <meta name="description" content={seoDescription} />
+        <meta name="og:description" content={seoDescription} />
         <title>{browserTitle}</title>
         <meta
             http-equiv="refresh"
