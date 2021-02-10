@@ -17,10 +17,10 @@ export const PdfPageTemplate = props => {
           <div className="pdf-serve-titleWrapper">
             <h1 className="pdf-serve-title"><a href={page.frontmatter.pdf}>{page.frontmatter.pdfLinkText}</a></h1>
           </div>
-          <div id="pdf-serve-imageWrapper">
-            <img src={page.frontmatter.pdfImg} />
-          </div>  
         </section>
+        <div id="pdf-serve-imageWrapper">
+          <img src={page.frontmatter.pdfImg} />
+        </div>  
     </article>
   );
 };
