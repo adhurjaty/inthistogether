@@ -11,9 +11,9 @@ class ValueTemplate extends Component {
     return (
       <section
         className={`meetup  ${this.props.className && this.props.className}`}>
-        <h2 className="meetup-title">{this.props.value.title}</h2>
+        <h2 className="meetup-title">{this.props.value.value_name}</h2>
         <div className="meetup-meta">
-            <p>{this.props.value.description}</p>
+            <p>{this.props.value.value_desc}</p>
         </div>
         {/* <div className="meetup-presenters">
             
@@ -25,8 +25,8 @@ class ValueTemplate extends Component {
 
 ValueTemplate.propTypes = {
   value: PropTypes.shape({
-    title: PropTypes.string,
-    description: PropTypes.string,
+    value_name: PropTypes.string,
+    value_desc: PropTypes.string,
   }),
 };
 
