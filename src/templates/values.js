@@ -6,7 +6,7 @@ import isBefore from "date-fns/is_before";
 import endOfDay from "date-fns/end_of_day"
 import ReactMarkdown from "react-markdown";
 
-import MeetupTemplate from "./value";
+import ValueTemplate from "./value";
 import Layout from "../components/Layout";
 import HTMLContent from "../components/Content";
 import "../styles/past-meetups-page.scss";
