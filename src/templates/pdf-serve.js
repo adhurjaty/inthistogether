@@ -6,19 +6,21 @@ import Helmet from "react-helmet";
 
 import Layout from "../components/Layout";
 import HTMLContent from "../components/Content";
-import "../styles/about-page.scss";
+import "../styles/pdf-serve.scss";
 
 export const PdfPageTemplate = props => {
   const { page } = props;
 
   return (
-    <article className="about">
-        <div id="container">
-            <div>
-                <h1><a href={page.frontmatter.pdf}>{page.frontmatter.pdfLinkText}</a></h1>
-            </div>
-            <div>
-                <img src={page.frontmatter.pdfImg} />
+    <article className="pdf-serve">
+        <div id="pdf-serve-container">
+            <div className="pdf-serve-titleWrapper">
+                <div id="pdf-serve-header">
+                    <h1 className="about-title"><a href={page.frontmatter.pdf}>{page.frontmatter.pdfLinkText}</a></h1>
+                </div>
+                <div id="pdf-serve-imageWrapper">
+                    <img src={page.frontmatter.pdfImg} />
+                </div>
             </div>
         </div>
     </article>
