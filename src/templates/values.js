@@ -18,13 +18,13 @@ export const ValuesTemplate = ({
   bodyIsMarkdown = false,
 }) => {
   return (
-    <article className="values">
-      <div className="container  values-container">
-        <h1 className="values-title">{title}</h1>
+    <article className="pastMeetups">
+      <div className="container  pastMeetups-container">
+        <h1 className="pastMeetups-title">{title}</h1>
         {bodyIsMarkdown ? (
-          <ReactMarkdown className="values-description" source={content} />
+          <ReactMarkdown className="pastMeetups-description" source={content} />
         ) : (
-          <HTMLContent className="values-description" content={content} />
+          <HTMLContent className="pastMeetups-description" content={content} />
         )}
         {values &&
           values.map((value, index) => (
