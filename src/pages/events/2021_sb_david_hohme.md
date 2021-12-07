@@ -1,7 +1,7 @@
 ---
 title: ITTE Presents David Hohme
 date: 2021-12-11T18:00:00.000-07:00
-eventImg: img/itte-presentshohme-fb-event-cover-photo.jpg
+eventImg: /img/itte-presentshohme-fb-event-cover-photo.jpg
 virtual: false
 showPresenters: false
 presenters:
