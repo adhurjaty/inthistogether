@@ -42,12 +42,17 @@ export const HomePageTemplate = ({ home, upcomingEvent: upcomingEvent = null }) 
               <p className="upcomingEvent-detail  upcomingEvent-detail--location">
                 <span className="upcomingEvent-detailLabel">Location: </span>
                 { upcomingEvent.virtual ? (
-                  <a className="upcomingEvent-streamLink" href={upcomingEvent.stream.streamLink}>
-                      {location_name}
-                  </a> ) : (upcomingEvent.location.name)
+                        <a className="upcomingEvent-streamLink" href={upcomingEvent.stream.streamLink}>
+                            {location_name}
+                        </a> 
+                    ) : (
+                        <a className="upcomingEvent-streamLink" href={upcomingEvent.location.mapsLink}>
+                            {upcomingEvent.location.name}
+                        </a> 
+                    )
                 }
               </p>
-              {presenters.length > 0 && (
+              {/* {presenters.length > 0 && (
                 <div className="upcomingEvent-presenters">
                   {presenters.map(presenter => (
                     <div className="upcomingEvent-presenter" key={presenter.text}>
@@ -64,10 +69,10 @@ export const HomePageTemplate = ({ home, upcomingEvent: upcomingEvent = null }) 
                     </div>
                   ))}
                 </div>
-              )}
+              )} */}
               <img className="upcomingEvent-eventImg" 
                    src={eventImg} />
-              { !upcomingEvent.virtual && (
+              {/* { !upcomingEvent.virtual && (
               <>
                 <p className="upcomingEvent-mapNote">{home.mapsNote}</p>
                 <div className="upcomingEvent-mapWrapper">
@@ -83,7 +88,7 @@ export const HomePageTemplate = ({ home, upcomingEvent: upcomingEvent = null }) 
                     />
                 </div>
               </>
-              )}
+              )} */}
             </>
           ) : (
             <a className="normal-link" 
